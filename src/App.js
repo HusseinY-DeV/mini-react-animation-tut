@@ -1,6 +1,7 @@
 import './App.css';
 import {useRef , useEffect, useState} from 'react';
 import {TweenMax , Power3 , TimelineLite} from 'gsap';
+import Transition from './Transition';
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
        ></div>
        <div className="circle" ref={el => rCircle =el}></div>
      </div>
-
+     <Transition />
    </div>
   )
 }
